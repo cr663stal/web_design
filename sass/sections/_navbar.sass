@@ -1,0 +1,33 @@
+.header
+    background-color:#EEEFF1
+.navbar
+    padding-top: 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-height: 60px
+    &__menu
+        text-transform: uppercase
+        // letter-spacing: 2px
+    &__menu a
+        margin: 0 15px
+        text-decoration: none
+        color: #000;
+        transition: 2s
+    &__menu a:hover
+        transition: 0.3s
+        color: $accent
+@media (max-width: 768px)
+    .navbar__menu
+        display: none
+    .navbar
+        padding: 0
+    .navbar__logo img
+        position: fixed
+        z-index: 2
+        top: 10px
+        left: 30px
+        width: 70px
+@media (max-width: 425px)
+    .mobile-menu
+        padding: 10px 30px

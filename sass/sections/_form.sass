@@ -1,0 +1,71 @@
+.form
+    background-color: #eeeff1
+    text-align: center
+    padding: 100px 0
+    &__heading
+        font-size: 32px
+        +medium
+    &__description
+        margin-top: 50px
+        margin-bottom: 65px
+        color: $sec
+    &-main
+        &__upper
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            input
+                margin: 0 15px 20px 15px
+                padding: 20px 85px 20px 20px
+                border: none
+                font-size: 14px
+                outline: none
+            &._error
+                background-color: #111
+                box-shadow: 0 0 15px red
+        textarea
+            resize: none
+            padding: 20px
+            width: 540px
+            height: 175px
+            border: none
+            outline: none
+    &__button
+        cursor: pointer
+        text-decoration: none
+        +light
+        letter-spacing: 2px
+        background-color: $accent
+        color: #fff
+        border: none
+        margin-top: 20px
+        padding: 25px 40px
+        text-transform: uppercase
+        background: lighten($accent, 3%)  
+        border: 1px solid darken($accent, 4%)
+        box-shadow: 0px 2px 0 darken($accent, 5%), 2px 2px 2px darken($accent, 2%)
+        transition: all 150ms linear
+    &__button:hover
+        background: darken($accent, 1%)
+        border: 1px solid rgba(#000, .05)
+        box-shadow: 1px 1px 2px rgba(#fff, 1.2)
+        color: lighten($accent, 50%)
+        text-decoration: none
+        text-shadow: -1px -1px 0 darken($accent, 9.5%)
+        transition: all 250ms linear
+@media (max-width: 643px)
+    .form
+        &__description
+            margin: 50px 20px
+
+@media( max-width: 609px )
+    .form
+        &-main
+            textarea
+                justify-content: space-between
+                width: 260px
+                padding: 15px 0 0 15px
+                font-size: 14px
+        &__description
+            text-align: center
+            margin: 50px 20px  

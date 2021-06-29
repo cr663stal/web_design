@@ -1,0 +1,27 @@
+.work 
+    background-color: #eeeff1
+    padding: 100px 0
+    text-align: center
+    &__heading
+        font-size: 32px
+        +medium
+    &__text
+        padding: 30px 0
+        color: $sec
+    &__image
+        overflow: hidden
+    &__image img
+        height: 100%
+        width: 100%
+@media ( max-width: 768px )
+    .work
+        &__image
+            width: 100%
+        &__image img
+            height: 90%
+            width: 90%
+@media (max-width: 610px)
+    .work
+        &__text
+            padding: 40px 20px
+            font-size: 20px

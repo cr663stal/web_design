@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="/img/logo/headerlogo/logo.png">
+    <title>WD: веб-дизайн</title>
+</head>
+
+<body>
+    <nav class="mobile-menu">
+        <!--Бургер-->
+        <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+        <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
+        <div class="mobile-menu__container">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item"><a href="#main" class="mobile-menu__link">Главная</a></li>
+                <li class="mobile-menu__item"><a href="#aboutme" class="mobile-menu__link">Обо мне</a></li>
+                <li class="mobile-menu__item"><a href="#work" class="mobile-menu__link">Процессы работы</a></li>
+                <li class="mobile-menu__item"><a href="#contacts" class="mobile-menu__link">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header id="main" class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <a href="#main">
+                        <img src="img/logo/headerlogo/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="navbar__menu">
+                    <a href="#main">Главная</a>
+                    <a href="#aboutme">Обо мне</a>
+                    <a href="#work">Процесс работы</a>
+                    <a href="#contacts">Контакты</a>
+                </div>
+            </nav>
+            <div class="hero">
+                <img src="img/laptop.png" alt="" class="hero__image">
+                <div class="hero-description">
+                    <div class="hero-description__heading">Дизайн и верстка</div>
+                    <div class="hero-description__text">
+                        Дизайн и верстка – два неотъемлемых компонента при создании любого печатного издания, с них все начинается. <br> Дизайн создает идею и образ будущего каталога или брошюры, его стиль и привлекательность для читателя. Верстка является
+                        продолжением дизайна, воплощением его в жизнь в графическом виде, готовит его для печати.
+                    </div>
+                    <a href="mailto:ramazansamigullin@mail.ru" class="hero-description__button button">Написать мне</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="aboutme" class="aboutme">
+            <div class="aboutme-block">
+                <div class="container">
+                    <div class="aboutme-text">
+                        <div class="aboutme-text__heading">Обо мне</div>
+                        <div class="aboutme-text__description">
+                            Привет! Меня зовут Рамазан Самигуллин и я начинающий веб-дизайнер. Занимаюсь написанием одностраничных веб-сайтов - лендингов. На данный момент имеется пару работ, которые были выполнены в ходе учебной деятельности.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="aboutme-line">
+                <div class="aboutme-line__logo">
+                    <img src="./img/paper.png" alt="">
+                </div>
+                <br>
+                <div class="aboutme-line__text">На данный момент написано 2 проекта: </div><br>
+                <div class="container">
+                    <div class="aboutme-line__img">
+                        <a href="https://github.com/cr663stal/BIGSTROY">
+                            <img src="./img/figma/figma1.png" alt="">
+                        </a>
+                        <a href="https://github.com/cr663stal/MyGiro">
+                            <img src="./img/figma/figma2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="container">
+                <div id="work" class="work__heading">Как я работаю</div>
+                <div class="work__text">Для работы мне нужно не так уж и много приложений. Среди них редактор кода Visual Studio Code, браузер Google Chrome, <br> система контроля версий GitHub. Так выглядит фрагмент кода этого сайта в программе Visual Studio Code. </div>
+                <div class="work__image"><img src="./img/work.jpg" alt=""></div>
+            </div>
+        </section>
+        <section class="logo">
+            <div class="container">
+                <img src="./img/logo/mainlogo/adobe-photoshop-logo.png" alt="">
+                <img src="./img/logo/github-logo.png" alt="">
+                <img src="./img/logo/mainlogo/laragon_logo.png" alt="">
+                <img src="./img/logo/mainlogo/visual-studio-code-logo.png" alt="">
+                <img src="./img/logo/mainlogo/visual-studio-logo.png" alt="">
+            </div>
+        </section>
+        <section id="contacts" class="form">
+            <div class="container">
+                <div class="form__heading">Хотите веб-сайт?</div>
+                <div class="form__description">Вы можете оставить свои данные в форме ниже, или же написать мне на почту</div>
+
+                <form id="form" class="form-main" onsubmit="send();return false">
+                    <div class="form-main__upper">
+                        <input class="form__input" id="name" type="text" value="" name="name" placeholder="Ваше имя">
+                        <input class="form__input _email" type="email" name="e-mail" placeholder="Ваш e-mail">
+                    </div>
+                    <textarea class="form__input" placeholder="Сообщение" name="message" id=""></textarea><br>
+                    <button type="submit" class="form__button button">Отправить</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="footer-text">
+                    Самигуллин Рамазан <br> <br> (с) 2021. Все права защищены.
+                </div>
+                <div class="footer-logo">
+                    <a href="https://www.facebook.com/profile.php?id=100009495810243">
+                        <img src="./img/logo/footerlogo/facebook-logo.png" alt="">
+                    </a>
+                    <a href="https://github.com/cr663stal">
+                        <img src="./img/logo/github-logo.png" alt="">
+                    </a>
+                    <a href="https://vk.com/cr663stal">
+                        <img src="./img/logo/footerlogo/vk-logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

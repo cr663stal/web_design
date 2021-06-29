@@ -1,0 +1,325 @@
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: 'Roboto Light';
+  src: url("../fonts/Roboto-Light.eot");
+  src: url("../fonts/?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url("../fonts/Roboto-Medium.eot");
+  src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url("Roboto-Regular.eot");
+  src: url("Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Roboto Regular', sans-serif;
+}
+
+.header {
+  background-color: #EEEFF1;
+}
+
+.navbar {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60px;
+}
+
+.navbar__menu {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navbar__menu a {
+  margin: 0 21px;
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar__menu a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #34547A;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 160px 0 150px 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-description__heading {
+  font-family: 'Roboto Medium', sans-serif;
+  font-size: 48px;
+}
+
+.hero-description__text {
+  font-size: 16px;
+  font-family: 'Roboto Light', sans-serif;
+  color: #727272;
+  margin: 60px 0 90px 0;
+}
+
+.hero-description__button {
+  text-decoration: none;
+  font-family: 'Roboto Light', sans-serif;
+  letter-spacing: 2px;
+  background-color: #34547A;
+  color: #fff;
+  border: none;
+  padding: 25px 40px;
+  text-transform: uppercase;
+}
+
+.hero__image {
+  margin-top: 20px;
+  width: 357px;
+  height: 233px;
+  margin-right: 130px;
+}
+
+.aboutme .aboutme-text {
+  padding: 120px 0 100px 0;
+  text-align: center;
+}
+
+.aboutme .aboutme-text__heading {
+  font-size: 32px;
+  font-family: 'Roboto Medium', sans-serif;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.aboutme .aboutme-text__description {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.aboutme-line {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 0;
+  background-color: #34547A;
+  color: #fff;
+}
+
+.skills {
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills-img img {
+  width: 555px;
+}
+
+.skills-block__heading {
+  font-size: 32px;
+  font-family: 'Roboto Medium', sans-serif;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.skills-block-item__span {
+  color: #727272;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.skills-block-item__span:first-child {
+  margin-top: 0;
+}
+
+.skills-block-item__line {
+  background: #c4c4c4;
+  width: 445px;
+  height: 4px;
+  position: relative;
+}
+
+.skills-block-item__line::before {
+  background-color: #34547A;
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 4px;
+}
+
+.work {
+  background-color: #eeeff1;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.work__heading {
+  font-size: 32px;
+  font-family: 'Roboto Medium', sans-serif;
+}
+
+.work__text {
+  padding: 50px 0;
+  color: #727272;
+}
+
+.work__image {
+  overflow: hidden;
+}
+
+.work__image img {
+  width: 100%;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 100px 0;
+}
+
+.logo img {
+  margin: 0 50px;
+  height: 100px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  opacity: 0.6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.logo img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  opacity: 1;
+}
+
+.form {
+  background-color: #eeeff1;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.form__heading {
+  font-size: 32px;
+  font-family: 'Roboto Medium', sans-serif;
+}
+
+.form__description {
+  margin-top: 50px;
+  margin-bottom: 65px;
+  color: #727272;
+}
+
+.form-main__upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-main__upper input {
+  margin: 0 15px 20px 15px;
+  padding: 20px 85px 20px 20px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-main textarea {
+  resize: none;
+  padding: 20px;
+  width: 540px;
+  height: 175px;
+  border: none;
+  outline: none;
+  margin-bottom: 70px;
+}
+
+.form__button {
+  text-decoration: none;
+  font-family: 'Roboto Light', sans-serif;
+  letter-spacing: 2px;
+  background-color: #34547A;
+  color: #fff;
+  border: none;
+  padding: 25px 40px;
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: #34547A;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer-wrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-logo img {
+  width: 50px;
+  margin: 0 20px;
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.footer-logo a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
